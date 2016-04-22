@@ -63,6 +63,7 @@ footer {
 section {
 	font-weight: 600;
 	margin-left: 12em;
+	line-height: 1.2em;
 }
 
 a {
@@ -72,4 +73,25 @@ a {
 
 .comment {
 	color: lightgreen;
+}
+
+.blink {
+	animation: blink-animation 1s steps(5, start) infinite;
+	-webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+.cursor {
+	border-left: 1px solid white;
+}
+
+@keyframes blink-animation {
+	to {
+		visibility: hidden;
+	}
+}
+
+@-webkit-keyframes blink-animation {
+	to {
+		visibility: hidden;
+	}
 }
