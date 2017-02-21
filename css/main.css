@@ -71,6 +71,9 @@ a {
 	border-left: 1px solid white;
 }
 
+.indented {
+	padding-left: 2em;
+}
 @keyframes blink-animation {
 	to {
 		visibility: hidden;
